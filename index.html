@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="Robot; test task by Olena Borysova">
+    <meta name="viewport" content="width=device-width; initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Robot by Olena Borysova</title>
+    <link rel="stylesheet" media="all" href="css/global.css" />
+    <link rel="stylesheet" media="all" href="css/main.css" />
+    <link rel="stylesheet" media="all" href="css/desktop.css" />
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">Robot</h1>
+    <h3 class="header__subtitle">(test task from Olena Borysova)</h3>
+  </header>
+  <main class="main">
+    <section class="setup">
+      <h2 class="setup__title">Please choose start layout</h2>
+      <form class="setup-form">
+        <label for="form"><span>Form</span>
+        <select name="form" id="form" class="form__dropdown" autocomplete="off">
+          <option value="square" selected>Square</option>
+          <option value="circle">Circle</option>
+        </select>
+        </label>
+
+        <label for="size"><span>Size</span>
+        <input type="number" id="size" value="5" class="form__field small" placeholder="Size">
+        </label>
+
+        <label for="cX"><span>Starting point (x, y)</span>
+        <input type="number" id="cX" value="0" class="form__field x-small" placeholder="x">,
+        <input type="number" id="cY" value="0" class="form__field x-small" placeholder="y">
+        </label>
+
+        <button class="form__button" onclick="createLayout(event)">START</button>
+
+      </form>
+      <p class="setup-form__error error" id="setupErrorMessage"></p>
+    </section>
+    <section class="content-wrapper" id="robotLayout">
+      <section class="content">
+        <form class="content-form">
+          <label for="command" class="content-form__label">Input your command in preferred language<sup>*</sup></label>
+          <select name="lang" id="lang" class="form__dropdown" autocomplete="off">
+            <option value="E" selected>English</option>
+            <option value="S">Swedish</option>
+            <option value="F">French</option>
+          </select>
+          <input type="text" name="command" id="command" class="form__field" placeholder="LFFR">
+          <button class="form__button" onclick="moveRobot(event);">GO</button>
+        </form>
+        <section class="content-result">
+          <h3 class="content-result-title" id="result"></h3>
+        </section>
+        <section class="content-info">
+          <p>* To move robot you can use commands Left, Right and Forward in three languages.</p>
+          <ul>
+            <li>English: use L to rotate robot left, R to rotate Right and F for moving Forward</li>
+            <li>Swedish: use V to rotate robot left, H to rotate Right and G for moving Forward</li>
+            <li>French: use G to rotate robot left, D to rotate Right and A for moving Forward</li>
+          </ul>
+        </section>
+      </section>
+      <section class="canvas" id="canvas">
+        <span class="canvas__robot" id="robot">^</span>
+      </section>
+  </section>
+  </main>
+  <footer class="footer">
+    <strong>Olena Borysova</strong>
+    <span>Helsingborg, June 2023</span>
+    <a href="mailto:ridgerry@gmail.com">ridgerry@gmail.com</a>
+  </footer>
+
+  <script src="js/moveRobot.js"></script>
+  <script src="js/createLayout.js"></script>
+</body>
+</html>

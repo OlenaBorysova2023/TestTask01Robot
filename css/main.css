@@ -1,0 +1,93 @@
+.main {
+  margin-top: 20px;
+}
+
+.setup {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.setup__title {
+  margin: 10px 0;
+}
+
+.setup-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.setup-form label span {
+  display: block;
+}
+
+.setup-form .form__button {
+  margin-left: 20px;
+  min-width: 100px;
+}
+
+.setup-form__error {
+  margin-bottom: -10px;
+}
+
+.content-wrapper {
+  display: none;
+  flex-flow: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.content-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-form__label {
+  flex-basis: 100%;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.content-result__title {
+  display: none;
+}
+
+.content {
+  flex-grow: 1;
+  padding-bottom: 20px;
+}
+
+.content-info {
+  color: #666;
+  line-height: 1.2;
+}
+
+.canvas {
+  position: relative;
+  min-width: 200px;
+  max-width: 200px;
+  height: 200px;
+  flex-basis: 200px;
+  flex-grow: 0;
+  background-color: #fdfdfd;
+  background-image:
+  linear-gradient(#e8e7e7 1px, transparent 0px),
+  linear-gradient(90deg, #e8e7e7 1px, transparent 0px);
+  background-size: 40px 40px, 40px 40px;
+  background-position: -1px -1px, -1px 1px;
+}
+
+.canvas__robot {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: Green;
+  font-weight: bold;
+  color: Green;
+}

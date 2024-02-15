@@ -1,0 +1,22 @@
+@media screen and (min-width: 1000px) {
+  .header,
+  .main,
+  .footer {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .content-wrapper {
+    flex-flow: row;
+    padding-bottom: 0;
+  }
+
+  .canvas {
+    order: -1;
+  }
+
+  .content {
+    padding: 0 0 0 20px;
+  }
+}

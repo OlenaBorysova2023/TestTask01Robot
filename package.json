@@ -1,0 +1,22 @@
+{
+	"author": "PinMeTo",
+	"name": "test",
+	"description": "Programming test",
+	"version": "1.0.0",
+	"license": "private",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:PinMeTo/codetest_robot.git"
+	},
+	"main": "index.js",
+	"scripts": {},
+	"dependencies": {},
+	"devDependencies": {
+		"jshint": "~2.13.4"
+	},
+	"optionalDependencies": {},
+	"engines": {
+		"node": ">=14.0.0"
+	}
+}

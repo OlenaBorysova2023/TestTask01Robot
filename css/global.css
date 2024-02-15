@@ -1,0 +1,104 @@
+sup {
+  color: #666;
+  padding: 0 2px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+ul {
+  list-style: inside;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.success {
+  color: Green;
+}
+
+.error {
+  color: Red;
+}
+
+.error > * {
+  border-color: Red;
+}
+
+.header,
+.main,
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  background: #ededed;
+  border-radius: 10px;
+}
+
+.header__title,
+.header__subtitle {
+  margin: 0;
+}
+
+.header__subtitle {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.footer {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #ccc;
+  color: #666;
+  line-height: 1.5;
+}
+
+.footer a {
+  color: White;
+}
+
+.footer span {
+  font-style: italic;
+  text-align: right;
+}
+
+.footer > * {
+  flex-basis: 50%;
+}
+
+.form__dropdown,
+.form__field,
+.form__button {
+  padding: 10px 5px;
+  margin-right: 10px;
+}
+
+.form__dropdown,
+.form__field {
+  background: White;
+  border: 1px solid #ddd;
+}
+
+.form__button {
+  min-width: 70px;
+  cursor: pointer;
+  font-weight: bold;
+  color: White;
+  border: 1px solid White;
+  background: linear-gradient(75.7deg, rgb(34, 126, 34) 3.8%, rgb(99, 162, 17) 87.1%);
+}
+
+.form__button:hover,
+.form__button:active {
+  background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+}
+
+.small {
+  width: 70px;
+}
+
+.x-small {
+  width: 40px;
+}
